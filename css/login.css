@@ -1,0 +1,94 @@
+body{
+    height: 100vh;
+    background-color: var(--cor-principal);
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, rgba(242,119,6,1) 10%, rgba(255,255,255,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+header{
+ 
+    height: 150px;
+ 
+}
+
+main{
+    flex-grow: 1; 
+    
+}
+
+.informacoes{
+    color: #fff;
+}
+
+.informacoes h1{
+    width: 230px;
+    font-size: 30px;
+}
+
+.informacoes p{
+    font-size: 14px;
+    width: 300px;
+}
+
+.login{
+    background-color: blue;
+
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+
+input{
+background-color: transparent;
+padding-left: 32px;
+border-bottom: solid #fff;
+border-top: none;
+border-right: none;
+border-left: none;
+height: 30px;
+color: #fff;
+
+
+}
+
+#email{
+    background-image: url(../img/Email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#senha{
+    background-image: url(../img/Lock.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+input:focus{
+    border:none;
+    outline: none;
+    border-bottom: solid #fff;
+}

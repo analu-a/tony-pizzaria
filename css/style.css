@@ -1,0 +1,53 @@
+body{
+
+    height: 100vh;
+    background-color: var(--cor-principal);
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body::after{
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, rgba(242,119,6,1) 10%, rgba(255,255,255,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+header{
+ 
+    height: 150px;
+}
+
+main{
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 100px;
+    align-items: center;
+}
+
+.conteudo-container{
+    color: #fff;
+    
+}
+
+.conteudo-container h1{
+    width: 230px;
+}
+
+.conteudo-container p{
+
+    width: 300px;
+}
