@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    background-color: #F6EDE5;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::after{
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, rgba(242,119,6,0.5494572829131652) 23%, rgba(255,255,255,0) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.inicio h1{
+    color: var(--cor-fonte);
+    font-size: 30px;
+}
+
+.inicio p{
+    color: var(--cor-fonte);
+    font-size: 16px;
+  
+}
+
+main{
+    flex-grow: 1; 
+    padding-left: 16px ; 
+}
+
+.pesquisar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+   border: none;
+   height: 40px;
+   width: 250px; 
+   border-radius: 10px;
+  
+
+}
+
+input::placeholder{
+    font-size: 12px;
+    color: #bbb5b5;
+    padding-left: 10px;
+}
+
+#pesquisa{
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(250px - 30px);
+    background-size: 20px;
+
+}
+
+.categoria p{
+    color: var(--cor-fonte);
+    font-size: 14px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.favoritas{
+    display: flex;
+}
+
+.favoritas p{
+    color: var(--cor-fonte);
+    font-size: 14px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.favoritas img{
+    width: 35vw;
+}
+
+
+
+
+
+

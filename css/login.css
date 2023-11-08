@@ -29,11 +29,15 @@ header{
 
 main{
     flex-grow: 1; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .informacoes{
-    color: #fff;
+    color: var(--cor-fonte);
 }
 
 .informacoes h1{
@@ -47,7 +51,7 @@ main{
 }
 
 .login{
-    background-color: blue;
+ 
 
     height: 80px;
     display: flex;
@@ -61,12 +65,12 @@ main{
 input{
 background-color: transparent;
 padding-left: 32px;
-border-bottom: solid #fff;
+border-bottom: solid #fff 1px;
 border-top: none;
 border-right: none;
 border-left: none;
 height: 30px;
-color: #fff;
+color: var(--cor-fonte);
 
 
 }
@@ -84,11 +88,34 @@ color: #fff;
 }
 
 input::placeholder{
-    color: #fff;
+    color: var(--cor-fonte);
 }
 
 input:focus{
     border:none;
     outline: none;
     border-bottom: solid #fff;
+}
+
+
+.botao-branco p{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--cor-fonte);
+    font-size: 14px;
+}
+
+.cadastro h2{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--cor-fonte);
+}
+
+.cadastro p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--cor-fonte);
+    text-shadow: 2px 2px 2px black;
 }
