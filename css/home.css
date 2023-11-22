@@ -79,6 +79,7 @@ input::placeholder{
 
 .favoritas{
     display: flex;
+    flex-direction: column;
 }
 
 .favoritas p{
@@ -89,6 +90,36 @@ input::placeholder{
 
 .favoritas img{
     width: 35vw;
+}
+
+.imgFav{
+    display: flex;
+   
+}
+
+.preco-calabresa{
+    width:  70px;
+    background-color: #F01212;
+    position: absolute;
+    top:14.5rem;
+    left: 1.5rem;
+    font-size: 12px;
+    padding: 4px 4px;
+    border-radius: 8px;
+    color: var(--cor-fonte);
+   
+}
+
+.descricao-calabresa{
+    width:  112px;
+    background-color: rgba(0, 0, 0, 0.507);
+    top: 16rem;
+    position: absolute;
+    font-size: 12px;
+    padding: 4px 4px;
+    left: 1.5rem;
+    border-radius: 0px 0px 0px 8px;
+    color: var(--cor-fonte);
 }
 
 
