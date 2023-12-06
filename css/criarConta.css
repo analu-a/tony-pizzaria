@@ -1,0 +1,11 @@
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fundo{
+    background-image: url(../img/cadastros/pizza2\ 1.webp);
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100vw;
+}
