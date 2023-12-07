@@ -4,8 +4,69 @@ body{
 }
 
 .fundo{
+    height: 35vh;
+    width: 100vw;
     background-image: url(../img/cadastros/pizza2\ 1.webp);
     background-repeat: no-repeat;
-    height: 30vh;
+    background-size: cover;
+}
+
+.fundo::after{
+    content: "";
+    display: block;
+    background-color: #fc7a0085;
     width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.cadastrar{
+    height: 69.5vh;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+    background-color: var(--cor-fonte);
+    /* background-color: blue; */
+
+}
+
+.informacoesCadastro{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.informacoesCadastro label{
+    display: flex;
+    font-size: 16px;
+    color: #999999;
+}
+
+.informacoesCadastro input{
+    height: 30px;
+    width: 70vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #C4C4C4 1px;
+}
+
+.botao{
+    color: var(--cor-fonte);
+    display: flex;
+}
+
+.botao-verde{
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
 }
